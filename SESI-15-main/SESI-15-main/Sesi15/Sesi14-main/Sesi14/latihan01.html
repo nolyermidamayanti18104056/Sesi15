@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan JQuery 01</title>
+</head>
+<body>
+    
+    <h3>Data Diri</h3>
+    <div id="tampil1"> Isi dari Tampil 1</div>
+    <div class="tampil1">isi dari class Tampil 1</div>
+
+    <p>Autobiografi</p>
+    <div id="nim">Nim</div>
+    <div class="jurusan">Jurusan</div>
+
+
+    <script src="jquery-3.7.0.min.js"></script> 
+    <script>
+        //document.getElementById("tampil").innerHTML = "Teks Baru";
+
+        $(document).ready(function(){
+            $("#tampil1").html("Kristiantari");
+            $(".tampil1").html("Bungbungan,24 Januari 2004");
+            $("h3").html("Data Diri");
+            $("p").html("Autobiografi")
+            $("#nim").html("2201010063");
+            $(".jurusan").html("TI-KAB");
+        });
+    </script>
+</body>
+</html>
